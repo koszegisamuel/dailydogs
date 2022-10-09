@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dee2e6;
+}
+
+nav {
+    background: #212529;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    }
+
+nav ul li {
+    display: inline-block;
+    line-height: 79px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 4px;
+}
+
+a:hover {
+    background: #6c757d;
+    transition: 0.5s;
+}
+
+.checkbutton {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+div {
+    float: left;
+    width: 33.333%;
+}
+
+img {
+    max-width:100%;
+}
+
+ion-icon {
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 952px) {
+    .checkbutton {
+        display: block;
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #adb5bd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        
+    }
+
+    a:hover {
+        background: none;
+        color: #212529;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+   div {
+    width: 100%;
+    float: none;
+   }
+
+   img {
+    max-width: 100%;
+   }
+
+   ion-icon {
+    font-size: 20px;
+   }
+}
+
+
